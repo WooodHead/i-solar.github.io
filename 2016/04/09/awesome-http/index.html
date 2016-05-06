@@ -1,0 +1,660 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Awesome-HTTP
+HTTP协议解决的问题：
+
+资源：从何获取( URI –&amp;gt; URL and URN )，资源类型( MIME )等（一个页面是多个资源的集合）
+事务：一个事务＝一个请求＋一个响应，请求方法，状态码＋状态码解释等（一个页面需要执行多个事务）
+报文：请求报文＋响应报文，起始行、首部（空行结束）、主体
+连接：端口号＋TCP/IP，端口号、IP地址（或者域名）由URL提供">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Solar">
+<meta property="og:url" content="http://i-solar.github.io/2016/04/09/awesome-http/index.html">
+<meta property="og:site_name" content="Solar">
+<meta property="og:description" content="Awesome-HTTP
+HTTP协议解决的问题：
+
+资源：从何获取( URI –&amp;gt; URL and URN )，资源类型( MIME )等（一个页面是多个资源的集合）
+事务：一个事务＝一个请求＋一个响应，请求方法，状态码＋状态码解释等（一个页面需要执行多个事务）
+报文：请求报文＋响应报文，起始行、首部（空行结束）、主体
+连接：端口号＋TCP/IP，端口号、IP地址（或者域名）由URL提供">
+<meta property="og:updated_time" content="2016-04-10T06:07:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Solar">
+<meta name="twitter:description" content="Awesome-HTTP
+HTTP协议解决的问题：
+
+资源：从何获取( URI –&amp;gt; URL and URN )，资源类型( MIME )等（一个页面是多个资源的集合）
+事务：一个事务＝一个请求＋一个响应，请求方法，状态码＋状态码解释等（一个页面需要执行多个事务）
+报文：请求报文＋响应报文，起始行、首部（空行结束）、主体
+连接：端口号＋TCP/IP，端口号、IP地址（或者域名）由URL提供">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title>  | Solar </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Solar</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">solar 的个人博客</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-09T16:31:39+08:00" content="2016-04-09">
+              2016-04-09
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Awesome-HTTP"><a href="#Awesome-HTTP" class="headerlink" title="Awesome-HTTP"></a>Awesome-HTTP</h1><hr>
+<p>HTTP协议解决的问题：</p>
+<ol>
+<li>资源：从何获取( URI –&gt; URL and URN )，资源类型( MIME )等（一个页面是多个资源的集合）</li>
+<li>事务：一个事务＝一个请求＋一个响应，请求方法，状态码＋状态码解释等（一个页面需要执行多个事务）</li>
+<li>报文：请求报文＋响应报文，起始行、首部（空行结束）、主体</li>
+<li>连接：端口号＋TCP/IP，端口号、IP地址（或者域名）由URL提供</li>
+<li>Web的结构组件：客户端，服务端（重要的两个），代理（安全、应用集成、性能优化），缓存代理（性能优化），网关（协议转换），隧道（盲发），Agent代理（例如浏览器、网络蜘蛛，这是客户端的程序）等等</li>
+</ol>
+<h3 id="1-URI-与-资源"><a href="#1-URI-与-资源" class="headerlink" title="1. URI 与 资源"></a>1. URI 与 资源</h3><h4 id="URI的两个子集"><a href="#URI的两个子集" class="headerlink" title="URI的两个子集"></a>URI的两个子集</h4><pre><code>URL（位置标识资源） 和 URN（名称标识资源）
+</code></pre><h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><pre><code>协议＋服务器位置（包括端口号）＋资源路径
+</code></pre><p>完整语法：</p>
+<pre><code>&lt;scheme&gt;://&lt;user&gt;:&lt;password&gt;@&lt;host&gt;:&lt;port&gt;/&lt;path&gt;;&lt;params&gt;?&lt;query&gt;#&lt;frag&gt;
+</code></pre><blockquote>
+<p>相对URL、浏览器自动扩展URL等都是URL的快捷方式</p>
+</blockquote>
+<p>URL的编码问题：</p>
+<ol>
+<li>URL使用的是US-ASCII字符集，采用7位二进制码；</li>
+<li>超过US-ASCII字符集范围的字符将使用“转义”表示法进行转义；（%加上两位16进制数表示一个字符）</li>
+<li>保留关键字符不能拿来使用</li>
+</ol>
+<blockquote>
+<p>推荐所有URL在发送请求前都对不安全的字符进行编码转义</p>
+</blockquote>
+<p>URL中主要的协议（或称方案）：</p>
+<ol>
+<li>http （除了没有用户名和密码之外，与通用的URL格式相符。如果省略了端口，就默认为80）</li>
+<li>https （语法与HTTP的语法相同，默认端口为443。唯一的区别在于方案https使用了网景的SSL，SSL为HTTP连接提供了端到端的加密机制。）</li>
+<li>ftp、file……</li>
+</ol>
+<p>URL的不完美：</p>
+<blockquote>
+<p>如果资源被移走了， URL 也就不再有效了</p>
+</blockquote>
+<p>完美的方案 –&gt; URN</p>
+<p><code>只要有了对象的准确名称，则不论其位于何处都可以找到这个对象</code></p>
+<p>URN的一种实现：PURL（永久资源定位符）</p>
+<p><code>基本思想是在搜索资源的过程中引入另一个中间层，通过一个中间资源定位符服务器对资源的实际 URL 进行登记和跟踪。客户端可以向定位符请求一个永久 URL，定位符可以以一个资源作为响应，将客户端重定向到资源当前实际的 URL 上去</code></p>
+<h3 id="2-HTTP报文"><a href="#2-HTTP报文" class="headerlink" title="2. HTTP报文"></a>2. HTTP报文</h3><ol>
+<li>报文流：用来描述报文的传输过程以及方向，把一个事务看成是一条河流，那么<code>上游</code>，<code>下游</code>，<code>流入</code>，<code>流出</code>就很好理解了</li>
+<li>方法：<code>GET</code> <code>POST</code> <code>PUT</code> <code>DELETE</code>等，还有一些服务器自有的扩展方法！（请求报文起始行）</li>
+<li>状态码：除了规定的，可以按规范中的范围意义自定义（响应报文起始行）</li>
+<li>原因短语：仅仅是解释状态码（响应报文起始行）</li>
+<li>版本号：比如，HTTP/2.22 就比 HTTP/2.3 的版本要高，因为 22 比 3 大</li>
+<li>首部（将长的首部行分为多行可以提高可读性，多出来的每行前面至少要有一个空格或制表符（tab）。后面细讲）<br>7.主体部分：很多类型数据的源数据</li>
+</ol>
+<h4 id="2-1-方法"><a href="#2-1-方法" class="headerlink" title="2.1 方法"></a>2.1 方法</h4><pre><code>方法只是用来告诉开发者应该做什么，而不是具体实现了什么
+</code></pre><p>安全方法：<code>GET</code> <code>HEAD</code>（遵循 HTTP/1.1 规范就必须实现）</p>
+<p>理解：<code>PUT</code> <code>POST</code> <code>TRACE</code> <code>OPTIONS</code></p>
+<ul>
+<li><p>TRACE：用于验证请求是否如愿穿过了请求 / 响应链，可以用来查看代理和其他应用程序对用户请求所产生效果</p>
+</li>
+<li><p>OPTIONS：请求 Web 服务器告知其支持的哪些功能（包括请求方法）</p>
+</li>
+</ul>
+<p>扩展方法（规范中未定义的）</p>
+<h4 id="2-2-首部"><a href="#2-2-首部" class="headerlink" title="2.2 首部"></a>2.2 首部</h4><h5 id="1-通用首部"><a href="#1-通用首部" class="headerlink" title="1. 通用首部"></a>1. 通用首部</h5><ol>
+<li>信息类（略）</li>
+<li>缓存首部：<code>Cache-Control</code></li>
+</ol>
+<h5 id="2-请求首部"><a href="#2-请求首部" class="headerlink" title="2. 请求首部"></a>2. 请求首部</h5><ol>
+<li>信息类（略）</li>
+<li><code>Accept</code>类首部：告知服务器它们想要什么，可以使用什么，以及最重要的，它们不想要什么（<code>Accept</code>   <code>Accept-Charset</code> <code>Accept-Encoding</code> <code>Accept-Language</code> <code>TE</code>）</li>
+<li>条件请求首部：为请求加上某些限制</li>
+<li>安全请求首部：对请求进行质询 / 响应认证（<code>Authorization</code> <code>Cookie</code> <code>Cookie2</code>）</li>
+<li>代理请求首部（<code>Max-Forward</code> <code>Proxy-Authorization</code> <code>Proxy-Connection</code>）</li>
+</ol>
+<blockquote>
+<p>某些重要的首部会详细讨论</p>
+</blockquote>
+<h5 id="3-响应首部"><a href="#3-响应首部" class="headerlink" title="3. 响应首部"></a>3. 响应首部</h5><ol>
+<li>协商首部（<code>Accept-Ranges</code> <code>Vary</code>）</li>
+<li>安全响应首部：HTTP 的质询 / 响应认证机制的响应侧</li>
+</ol>
+<h5 id="4-实体首部"><a href="#4-实体首部" class="headerlink" title="4. 实体首部"></a>4. 实体首部</h5><pre><code>提供了有关实体及其内容的大量信息，从有关对象类型的信息，到能够对资源使用的各种有效的请求方法
+</code></pre><ol>
+<li>信息类（略）</li>
+<li>内容首部（<code>Content-*</code>）</li>
+<li>实体缓存首部（<code>ETag</code> <code>Expires</code> <code>Last-Modified</code>）</li>
+</ol>
+<h3 id="3-连接管理"><a href="#3-连接管理" class="headerlink" title="3. 连接管理"></a>3. 连接管理</h3><p>性能优化点：</p>
+<ol>
+<li>Connection首部指定不传输哪些首部</li>
+<li><p>显示写定图片尺寸</p>
+</li>
+<li><p>并行连接</p>
+</li>
+<li>持久连接</li>
+<li>管道化连接</li>
+<li>复用的连接</li>
+</ol>
+<p>并行连接：</p>
+<pre><code>同时（每个连接之间有软件延迟）打开多个HTTP连接
+</code></pre><p>优点：</p>
+<ol>
+<li>网络带宽够用、内存够大、服务器性能好的情况下，会加快加载速度；</li>
+<li>多个事务在执行，让用户感觉速度还行</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li>带宽不够时，由于事务之间的竞争，会让每个事务执行变慢；</li>
+<li>内存不够时，电脑性能受影响；</li>
+<li>服务器在并行数量累积情况下，难以承受，会更慢；</li>
+<li>TCP的建立与慢启动的缓慢过程仍没改变</li>
+</ol>
+<p>中庸：</p>
+<pre><code>客户端将并行连接的总数限制为一个较小的值（通常是 4 个）；服务器可以随意关闭来自特定客户端的超量连接
+</code></pre><p>持久连接：<br>    建立一次TCP连接，传输多次数据，要避免出现空闲未使用情况</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Connection: Keep-Alive  <span class="comment"># 激活</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/05/awesome-react/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/19/awesome-beautifulsoup/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="solar" />
+          <p class="site-author-name" itemprop="name">solar</p>
+          <p class="site-description motion-element" itemprop="description">solar 的个人博客，用来记录个人的技术文章、读书笔记、个人生活以及情感方面的内容等，Only one, from solar!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Awesome-HTTP"><span class="nav-number">1.</span> <span class="nav-text">Awesome-HTTP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-URI-与-资源"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. URI 与 资源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#URI的两个子集"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">URI的两个子集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">URL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-HTTP报文"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. HTTP报文</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-方法"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">2.1 方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-首部"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">2.2 首部</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-通用首部"><span class="nav-number">1.0.2.2.1.</span> <span class="nav-text">1. 通用首部</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-请求首部"><span class="nav-number">1.0.2.2.2.</span> <span class="nav-text">2. 请求首部</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-响应首部"><span class="nav-number">1.0.2.2.3.</span> <span class="nav-text">3. 响应首部</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-实体首部"><span class="nav-number">1.0.2.2.4.</span> <span class="nav-text">4. 实体首部</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-连接管理"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. 连接管理</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">solar</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
